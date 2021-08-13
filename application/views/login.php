@@ -18,7 +18,7 @@
         <div class="col-md-5 login">
             <img class="logo" src="<?php echo base_url(); ?>assets/image/logo.png">
             <h1 class="login-title">Login</h1>
-            <p class="login-desc">Not have an account ? <span><a href="#">request access</a></span></p>
+            <p class="login-desc">Not have an account ? <span><a href="<?php echo base_url().'index.php/accountctl/creatingAccount';?>">request access</a></span></p>
             <form class="form-login" action="<?php echo base_url().'index.php/accountctl/checkingLogin';?>" name="login" method="POST">
                 <?php if($msg != ""){ ?>
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">

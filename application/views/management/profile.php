@@ -19,10 +19,10 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <?php $this->load->view('leader/sidebar') ?>
+        <?php $this->load->view('management/sidebar') ?>
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
-                <?php $this->load->view('leader/header', array('nama' => $nama)) ?>
+                <?php $this->load->view('management/header', array('nama' => $nama)) ?>
 
                 <div class="container-fluid">
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -37,7 +37,7 @@
                     <div class="card shadow h-100 py-3 px-3 text-dark">
                         <div class="row py-2 px-2 align-items-center">
                             <div class="col-md-8">
-                                <form action="<?php echo base_url().'index.php/leaderCtl/updateProfile';?>" method="post">
+                                <form action="<?php echo base_url().'index.php/managementCtl/updateProfile';?>" method="post">
                                     <div class="row py-2">
                                         <div class="col-md-3 inputTitle py-2">
                                             <strong>Nama</strong>
@@ -82,7 +82,7 @@
                     </div>          
                 </div>
             </div>
-            <?php $this->load->view('leader/footer') ?>
+            <?php $this->load->view('management/footer') ?>
 
         </div>
 
@@ -91,7 +91,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-    <?php $this->load->view('leader/modal') ?>
+    <?php $this->load->view('management/modal') ?>
     <?php if($nama == ""){
         echo '<script>alert("Silahkan Melengkapi Data diri terlebih dahulu")</script>';
     } ?>
